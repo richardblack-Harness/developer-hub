@@ -2,7 +2,7 @@
 title: Harness Infrastructure as Code Management (IaCM) Overview
 sidebar_label: Overview
 description: Learn about Harness Infrastructure as Code Management.
-sidebar_position: 10
+sidebar_position: 1
 redirect_from:
   - /docs/infra-as-code-management/get-started-with-iacm/iacm
 ---

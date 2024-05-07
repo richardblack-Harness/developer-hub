@@ -2,7 +2,7 @@
 title: Key concepts
 description: Learn the key terms and concepts related to Infrastructure as Code Management.
 sidebar_label: Key concepts
-sidebar_position: 20
+sidebar_position: 2
 redirect_from:
   - /docs/infra-as-code-management/get-started-with-iacm/iacm-terms-and-concepts
 ---
