@@ -14,10 +14,13 @@ Infrastructure as Code (IaC) enables the definition of infrastructure resources 
 
 This guide provides step-by-step instructions for onboarding to IaCM. It covers the following topics:
 
+- Creating a Project, Workspace and Pipelines
+- Adding 
+
 ## Prerequisites
 Before getting started, make sure you have the following prerequisites in place:
 
-- Access to Harness IaCM (go to __link__ to register)
+- Access to Harness IaCM (go to [app.harness.io]() to login or register)
 - Access to your target Cloud Provider, e.g. AWS, Azure
 - A Git Repository
 
