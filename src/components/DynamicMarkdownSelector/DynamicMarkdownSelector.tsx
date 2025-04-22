@@ -1,3 +1,23 @@
+/*
+ * DynamicMarkdownSelector Component
+ *
+ * Renders a row of selectable tiles. When a tile is selected, it fetches and displays markdown content from a corresponding path.
+ *
+ * Props:
+ *   options: Record<string, string>
+ *     - An object where each key is a label for a selector tile, and each value is a URL/path to a markdown file.
+ *
+ * Usage Example:
+ *
+ * <DynamicMarkdownSelector
+ *   options={{
+ *     Docker: '/docs/artifact-registry/docker.md',
+ *     Maven: '/docs/artifact-registry/maven.md',
+ *     Python: '/docs/artifact-registry/python.md',
+ *   }}
+ * />
+ */
+
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import './DynamicMarkdownSelector.css';
