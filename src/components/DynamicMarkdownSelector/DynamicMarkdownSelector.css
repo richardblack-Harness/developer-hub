@@ -32,10 +32,20 @@
   padding: 7px 18px;
   border-radius: 6px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700; /* Reserve space for bold text */
   cursor: pointer;
-  transition: background 0.15s, color 0.15s, border 0.15s;
+  transition: background 0.15s, color 0.15s;
   outline: none;
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.selector-tile span {
+  font-weight: 500;
+}
+
+.selector-tile.selected span {
+  font-weight: 700;
 }
 
 .selector-tile.selected,
@@ -43,7 +53,6 @@
   background: #1976d2;
   color: #fff;
   border: 1.5px solid #1976d2;
-  font-weight: 700;
 }
 
 .selector-tile:focus {

@@ -36,7 +36,7 @@ const DynamicMarkdownSelector: React.FC<DynamicMarkdownSelectorProps> = ({ optio
             onClick={() => setSelected(label)}
             type="button"
           >
-            {label}
+            <span>{label}</span>
           </button>
         ))}
       </div>
