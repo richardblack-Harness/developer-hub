@@ -1,8 +1,8 @@
 .dynamic-markdown-selector {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 20px;
-  background: #fafbfc;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
 }
 
 .dynamic-markdown-selector label {
@@ -18,8 +18,50 @@
   border: 1px solid #bdbdbd;
 }
 
+.selector-tiles {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.selector-tile {
+  border: 1.5px solid #1976d2;
+  background: #fff;
+  color: #1976d2;
+  padding: 7px 18px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border 0.15s;
+  outline: none;
+}
+
+.selector-tile.selected,
+.selector-tile:focus.selected {
+  background: #1976d2;
+  color: #fff;
+  border: 1.5px solid #1976d2;
+  font-weight: 700;
+}
+
+.selector-tile:focus {
+  box-shadow: 0 0 0 2px #90caf9;
+}
+
 .dynamic-markdown-selector .markdown-content {
-  margin-top: 24px;
+  margin: 24px 0;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.selector-divider {
+  border: none;
+  border-top: 1.5px solid #e0e0e0;
+  margin: 0 0 24px 0;
+}
+
+.selector-divider:last-child {
+  margin: 24px 0 0 0;
 }

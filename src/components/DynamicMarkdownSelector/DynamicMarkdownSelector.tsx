@@ -27,17 +27,23 @@ const DynamicMarkdownSelector: React.FC<DynamicMarkdownSelectorProps> = ({ optio
 
   return (
     <div className="dynamic-markdown-selector">
-      <label>
-        <strong>Select format: </strong>
-        <select value={selected} onChange={e => setSelected(e.target.value)}>
-          {labels.map(label => (
-            <option key={label} value={label}>{label}</option>
-          ))}
-        </select>
-      </label>
+      <hr className="selector-divider" />
+      <div className="selector-tiles">
+        {labels.map(label => (
+          <button
+            key={label}
+            className={`selector-tile${selected === label ? ' selected' : ''}`}
+            onClick={() => setSelected(label)}
+            type="button"
+          >
+            {label}
+          </button>
+        ))}
+      </div>
       <div className="markdown-content">
         <ReactMarkdown>{markdown}</ReactMarkdown>
       </div>
+      <hr className="selector-divider" />
     </div>
   );
 };
