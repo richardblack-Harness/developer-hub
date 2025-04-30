@@ -22,6 +22,13 @@ This document walks through each tab of a workspace, explaining its data, settin
 ### Resources
 The Resources tab compiles information from the infrastructure code associated with your workspace. It lists all provisioned resources, such as servers and databases.
 - **Usage:** This tab helps you monitor and manage the resources provisioned by your pipelines, providing insights into the current state and configuration of each resource.
+
+Within the Resources tab, you can review the following:
+  - **Resources**: View and manage infrastructure resources provisioned by your workspace. Each resource shows provider information, type, name, and module path.
+  - **Data Sources**: Explore data sources defined in your infrastructure code that are used to fetch and utilize information from your providers.
+  - **Outputs**: View the output values defined in your infrastructure code, which are useful for displaying resource attributes or calculated values.
+- Filter resources by resource type, such as servers, databases, and virtual machines.
+- Search for specific resources by name or ID.
 ---
 ### Variables
 The Variables tab is populated from the variables defined within your infrastructure code, commonly in your `variables.tf` file.
