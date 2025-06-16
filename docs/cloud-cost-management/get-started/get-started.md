@@ -19,6 +19,26 @@ Follow these steps to connect your cloud infrastructure and start visualizing yo
 - Access to your cloud provider's billing and IAM settings.
 - Permissions to create billing exports and read cost data.
 
+## Quick Setup Process
+
+<div className="quick-setup-container" style={{display: 'flex', justifyContent: 'space-between', marginBottom: '20px'}}>
+  <div className="setup-step" style={{flex: '1', padding: '15px', margin: '0 10px', border: '1px solid #eee', borderRadius: '5px', textAlign: 'center'}}>
+    <div style={{fontSize: '24px', fontWeight: 'bold', marginBottom: '10px'}}>1</div>
+    <div style={{fontWeight: 'bold'}}>Connect Cloud Provider</div>
+    <div>Create CCM connector for your cloud account</div>
+  </div>
+  <div className="setup-step" style={{flex: '1', padding: '15px', margin: '0 10px', border: '1px solid #eee', borderRadius: '5px', textAlign: 'center'}}>
+    <div style={{fontSize: '24px', fontWeight: 'bold', marginBottom: '10px'}}>2</div>
+    <div style={{fontWeight: 'bold'}}>Wait for Data Ingestion</div>
+    <div>Data processing takes ~24 hours</div>
+  </div>
+  <div className="setup-step" style={{flex: '1', padding: '15px', margin: '0 10px', border: '1px solid #eee', borderRadius: '5px', textAlign: 'center'}}>
+    <div style={{fontSize: '24px', fontWeight: 'bold', marginBottom: '10px'}}>3</div>
+    <div style={{fontWeight: 'bold'}}>Access & Create</div>
+    <div>View default and create custom perspectives</div>
+  </div>
+</div>
+
 ## 1. Add a Cloud Provider Connector
 <Tabs>
 <TabItem value="interactive-guide" label="Interactive Guide">
@@ -105,6 +125,14 @@ For Kubernetes, navigate to **Cloud Cost Management > Clusters** to verify that 
 :::note
 Cost data may take up to 24 hours to appear depending on your cloud provider’s billing export cadence.
 :::
+
+## Accessing Default Perspectives
+After connecting your cloud provider and waiting for data ingestion (approximately 24 hours):
+1. Navigate to the **Perspectives** page in your Harness CCM dashboard
+2. Look for the **By Harness** filter in the top-left corner to view all default perspectives
+
+## Creating Your First Perspective
+To create a custom perspective that matches your business needs, see [Creating a Perspective](/docs/cloud-cost-management/use-ccm-cost-reporting/ccm-perspectives/creating-a-perspective).
 
 ## What's Next?
 You've successfully connected your cloud provider and enabled billing visibility. You can now:
